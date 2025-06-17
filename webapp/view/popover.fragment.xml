@@ -1,0 +1,46 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		id="myPopover"
+		showHeader="false"
+		contentWidth="200px"
+		contentHeight="200px"
+		placement="Bottom"
+		ariaLabelledBy="master-title">
+		<NavContainer
+			id="navCon">
+			<Page
+				id="master"
+				class="sapUiResponsivePadding--header"
+				title="Details">
+				<List
+					id="list"
+					items="" >
+					<StandardListItem
+						title="Open Talent Card"
+						
+						 />
+                         <StandardListItem
+						title="Edit Talent Review"
+						
+						 />
+                         <StandardListItem
+						title="Employee Profile"
+					
+						 />
+                         <StandardListItem
+						title="Developement"
+						
+						 />
+                         <StandardListItem
+						title="Acheivement"
+						
+						 />
+				</List>
+                
+			</Page>
+			
+		</NavContainer>
+	</Popover>
+</core:FragmentDefinition>

@@ -1,0 +1,553 @@
+/* style.css */
+
+
+.sapMList {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 7px;
+  height : 11rem
+}
+.moveRight {
+  position: relative;
+  left: 13rem; /* Or any value you want */
+  
+}
+
+.sapFGridList>.sapMListHdrText, .sapFGridList>.sapMListHdrTBar {
+  margin-bottom: 0.5rem;
+  height: 6rem;
+  width: 30rem;
+  /* just added */
+  position: relative;
+  left: 5px;
+}
+
+.pushDown {
+  margin-top: 3rem; /* Or whatever vertical space you need */
+}
+
+.unfitGrid {
+  width: 30rem;
+  margin-top: -5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.promotableBox {
+  /* background-color: #0070f2;; */
+  background-color:#4287f5;
+  
+
+  padding: 1rem;
+  height: 12rem;
+  width: 16rem;
+  font-weight: bold;
+}
+
+
+
+.unfit  {
+  background-color: #ffe0e0; /* light pink, adjust as needed */
+  height: 100%;
+  border-radius: 6px;
+  width: 12rem;
+  /* new added */
+  left: -44rem;
+  
+  
+      top: 22rem;
+ 
+}
+.gridlist2{
+  /* background-color: #0070f2;; */
+   background-color:#4287f5
+
+}
+
+.sapFGridList>.sapMListHdrText, .sapFGridList>.sapMListHdrTBar {
+  margin-bottom: 0.5rem;
+  /* background-color: #0070f2; */
+  background-color:#4287f5
+}
+
+/* solid contributor */
+.gridList4Bg .sapFGLI .sapFGLIWrapper .sapMLIBContent {
+  background-color: #004d4d; /* Teal-like color for SOLID CONTRIBUTOR */
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+}
+ /* Berlin city member */
+ .berlinGrid .sapFGLI .sapFGLIWrapper .sapMLIBContent {
+  background-color: #1f2d76; /* Blue color for BERLIN CITY MEMBER */
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  
+}
+
+/* unfitgrid */
+.unfitGrid .sapFGLI .sapFGLIWrapper .sapMLIBContent {
+  background-color: #8b8786; /* Reddish tone for UNFIT */
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  padding: 0rem;
+}
+
+/* sleeping tiger */
+.gridList2Bg .sapFGLI .sapFGLIWrapper .sapMLIBContent {
+  background-color: #f59b42; /* Deep purple */
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  
+}
+.whiteList {
+  background-color: white !important;
+  border: 1px solid #ccc; /* Optional: for better visibility */
+  border-radius: 8px;     /* Optional: rounded corners */
+  padding: 0.5rem;        /* Optional: inner spacing */
+}
+.sapUiSizeCompact .sapMSLITitleOnly {
+  font-size: .875rem;
+  background-color: white;
+}
+
+.sapUiSizeCompact .sapMSLI {
+  height: 2rem;
+  width: 9rem;
+}
+
+
+/* x axis & y axis======================================== */
+.yAxisWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 320px; /* Match the quadrant height */
+  margin-left: 10px;
+}
+
+
+/* .yArrow {
+  width: 8px;
+  height: 142%;
+  background-color: gray;
+  position: relative;
+  margin-left: 14px;
+  top: 4rem;
+  left: -1rem;
+} */
+.yArrow {
+  width: 8px;
+  height: 162%;
+  background-color: gray;
+  position: relative;
+  margin-left: 14px;
+  top: 6rem;
+  left: -1rem;
+}
+/* now added */
+.yArrow {
+  width: 8px;
+  height: 144%;
+  background-color: gray;
+  position: relative;
+  margin-left: 14px;
+  top: 5rem;
+
+  left: -1rem;
+}
+/* now added */
+.yArrow::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -6px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid gray;
+}
+
+.yLabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 87%;
+  margin-right: 6px;
+  text-align: right;
+  font-weight: bold;
+  top: 3rem;
+    position: relative;
+}
+
+/* now added =======================*/
+ 
+
+/* .yLabel::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid gray;
+} */
+.yLabel {
+  position: relative;
+  padding: 6px 16px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid gray;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+  min-width: 85px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Triangle pointer facing right toward Y arrow */
+.yLabel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid gray;
+}
+
+
+.yLabel.low { color: #6a9824;position: relative;
+  top: 66px; }
+.yLabel.moderate { color: #b80000;position: relative;
+  bottom: -2px; }
+.yLabel.high { color: #0077cc;position: relative;
+  bottom: 40px; }
+
+/* .yAxisText {
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  font-weight: bold;
+  margin-top: 10px;
+} */
+.yAxisText {
+  position: absolute;
+  top: 18rem;
+
+  left:  -23px;;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* === X AXIS === */
+/* .xAxisWrapper {
+  margin-left: 70px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+/* .xAxisWrapper {
+  margin-left: 70px;
+  margin-top: 376px;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+} */
+.xAxisWrapper {
+  margin-left: -283px;
+  margin-top: 149px;
+  display: flex
+;
+  flex-direction: column;
+  align-items: center;
+}
+/* .xArrow {
+  width: 834px;
+  height: 8px;
+  background-color: gray;
+  position: relative;
+} */
+
+/* .xArrow {
+  width: 849px;
+  height: 8px;
+  background-color: gray;
+  position: relative;
+  left: 2rem
+
+
+} */
+
+/* now worked */
+ /* this one previously used */
+/* .xArrow {
+  width: 769px;
+  height: 8px;
+  background-color: gray;
+  position: relative;
+  left: -69px;;
+  
+  top: -2rem;
+} */
+
+ /* Base styles for mobile (default) */
+ .xArrow {
+  width: 769px; /* Make it fluid for smaller screens */
+  max-width: 300px; /* Limit max width for very small screens if desired */
+  height: 4px; /* Thinner for mobile */
+  background-color: gray;
+  position: relative;
+  left: 0; /* Align to left by default */
+  top: -1rem; /* Adjust top for mobile */
+  border-radius: 4px; /* Added rounded corners for aesthetics */
+}
+
+/* Small screens and tablets (e.g., up to 768px wide) */
+@media (min-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  .xArrow {
+      width: 70%; /* Adjust width for tablets */
+      height: 6px; /* Slightly thicker */
+      left: -76rem; /* Adjust left for tablets */
+      top: -1.5rem;
+  }
+}
+
+/* Medium screens and desktops (e.g., 769px to 1024px wide) */
+@media (min-width: 769px) {
+  .xArrow {
+      width: 10rem; /* Original width for desktops */
+      height: 8px; /* Original height */
+      background-color: gray;
+      position: relative;
+      left: -76rem; /* Original left position */
+      top: -2rem; /* Original top position */
+      display: block;
+      max-width: none;
+  }
+}
+/* Large screens (e.g., 1025px to 2100px wide) */
+@media (min-width: 1025px) {
+  .xArrow {
+      width: 49rem; /* Wider for large screens */
+      height: 8px; /* Even thicker */
+      left: -67px; /* Further left for large screens */
+      top: -2rem;
+  }
+  .xLabels {
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+    /* margin-top: 5px; */
+    margin-top: -21px;
+    font-weight: bold;
+  }
+  .xLabel.low { color: #6a9824;position: relative;
+  right: 7rem; } 
+.xLabel.moderate { color: #b80000;position: relative;
+  left: -9rem; }
+ .xLabel.high { color: #0077cc; position: relative;
+  left: -10rem; }
+  .xAxisText {
+  margin-top: 3px;
+  font-weight: bold;
+  position: relative;
+        left: -8rem;
+}
+}
+/* Extra large screens (e.g., more than 2100px wide) */
+@media (min-width: 2101px) {
+  .xArrow {
+      width: 49rem;; /* Even wider for ultra large screens */
+      /* height: 12px; 
+      left: -150px;  */
+      height: 8px;
+      left: -76rem;
+      top: -2rem; 
+      display: block;
+        max-width: none;
+  }
+  .xLabels {
+    display: flex;
+    justify-content: space-between;
+    width: 505px;
+    /* margin-top: 5px; */
+    margin-top: -21px;
+    font-weight: bold;
+  }
+  .xLabel.low { color: #6a9824;position: relative;
+    right: 79rem;; }
+    .xLabel.moderate { color: #b80000;position: relative;
+      left: -79rem; }
+    .xLabel.high { color: #0077cc; position: relative;
+      left: -79rem; }
+      .xAxisText {
+        margin-top: 3px;
+        font-weight: bold;
+        position: relative;
+        left: -78rem;
+        top: 1rem;
+      }
+}
+
+
+/* now worked */
+.xArrow::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid gray;
+}
+
+
+
+/* .xLabels {
+  display: flex;
+  justify-content: space-between;
+  width: 505px;
+  
+  margin-top: -21px;
+  font-weight: bold;
+} */
+
+
+
+/* .xLabel.low { color: #6a9824;position: relative;
+  right: 2rem; } */
+/* .xLabel.moderate { color: #b80000;position: relative;
+  left: -2rem; } */
+/* .xLabel.high { color: #0077cc; position: relative;
+  left: -5rem; } */
+ 
+  
+
+/* .xAxisText {
+  margin-top: 3px;
+  font-weight: bold;
+} */
+
+/* recently added */
+.sapMText {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: pre-line;
+  word-wrap: break-word;
+  cursor: text;
+  font-size: 1.875rem;
+
+  font-family: var(--sapFontFamily);
+  line-height: normal;
+  color: var(--sapTextColor);
+  position: relative;
+  left: 32rem;
+}
+/* .xAxisText {
+  margin-top: -29px;
+  font-weight: bold;
+} */
+
+
+
+
+
+ /* footer for adjusting x axis & Y axis*/
+
+ 
+
+/* Remove list default item border spacing if needed */
+.customListSpacing .sapMLIB {
+  border-bottom: none;
+}
+
+.listItemSpacin {
+  margin-bottom: 1rem; /* adjust spacing as needed */
+  border-bottom: 1px solid #ccc; /* optional: line like divider */
+  border-radius: 6px; /* optional: rounded edges */
+  padding: 0.5rem; /* optional: inner padding */
+  background-color: white; /* optional: clean background */
+}
+
+/* Remove list default item border spacing if needed */
+.customListSpacing .sapMLIB {
+  border-bottom: none;
+}
+
+.listWithGapRight {
+  margin-right: 5rem; /* Or use 16px, 2rem, etc. */
+}
+
+
+
+/* Gridlist VBox  */
+.sapMTitle {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  color: #e8ecf1;
+  font-family: var(--sapFontHeaderFamily);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: text;
+  text-shadow: none;
+}
+
+/* gridlist icon */
+.grdlstIcon{
+  position: relative;
+    left: 10rem;
+
+}
+.promoIcon{
+  position: relative;
+  left: 14rem;
+}
+.berlinIcon{
+  position: relative;
+    left: 10rem;
+}
+.slpTiger{
+  position: relative;
+    left: 28rem
+}
+
+
+.sapMIBar-CTX .sapMTitle {
+  color: var(--sapPageHeader_TextColor);
+  text-shadow: none;
+  left: 34rem;
+}
+
+
+
+/* ======================================== */
+.sapMListHdrText {
+  font-size: var(--sapGroup_Title_FontSize);
+  color: #1c1cff03;
+}

@@ -1,0 +1,255 @@
+<mvc:View controllerName="talent.talentclass.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+     xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:layout="sap.ui.layout"
+    xmlns:f="sap.f"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+     xmlns:dnd="sap.ui.core.dnd"
+
+     	xmlns:cssgrid="sap.ui.layout.cssgrid"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+
+  
+   <Page
+        id="page"
+        title="Talent Class"
+        showHeader="true"
+        class="sapUiResponsiveContentPadding page">
+        
+
+        <content>
+        <!-- <HBox>
+            <Text text="Talent Class"/>
+        </HBox> -->
+        
+   <HBox>
+   <html:div class="yAxisWrapper">
+  <html:div class="yLabels">
+    <html:div class="yLabel high">High</html:div>
+    <html:div class="yLabel moderate">Moderate</html:div>
+    <html:div class="yLabel low">Low</html:div>
+  </html:div>
+
+  <html:div class="yArrow"></html:div>
+
+  <html:div class="yAxisText">↑ PERFORMANCE</html:div>
+</html:div>
+        <VBox >
+                <HBox >
+               		<f:GridList id="gridList4" headerText="" class="gridList4Bg" borderReached=".onBorderReached" items=""  >
+				
+					<f:customLayout >
+						<cssgrid:GridBasicLayout gridAutoRows="5rem"   gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>
+					</f:customLayout>
+					<f:GridListItem>
+						<f:layoutData >
+							<cssgrid:GridItemLayoutData gridRow="span 3" gridColumn="span 2"  />
+						</f:layoutData>
+						<VBox class="sapUiSmallMargin" >
+                        <core:Icon src="sap-icon://physical-activity" size=""  class="grdlstIcon" /> 
+							<Title text="SOLID CONTRIBUTOR" wrapping="true" />
+                           
+                            
+                               <!-- <Switch state="true" change="onSwitchToggle">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch> -->
+							<!-- <Label text="{name}" wrapping="true" /> -->
+               <!-- List SOLID CONTRIBUTOR -->
+                <List id="list1" headerText="" width="100%" items="{/list1}"  mode="SingleSelectMaster"
+				itemPress="onListItemPress"
+				inset="false"  noDataText="Add">
+                    <dragDropConfig>
+                        <dnd:DragInfo sourceAggregation="items" />
+                        <dnd:DropInfo targetAggregation="items" drop="onDrop" />
+                    </dragDropConfig>
+                    <items>
+                        <StandardListItem title="{name}" class="whiteList listItemSpacing" type="Active"/>
+                    </items>
+                </List>
+						<!-- <List id="list6" headerText="" width="100%" items="{/list6}"  mode="SingleSelectMaster"
+				itemPress="onListItemPress"
+				inset="false"  >
+                    <dragDropConfig>
+                        <dnd:DragInfo sourceAggregation="items" />
+                        <dnd:DropInfo targetAggregation="items" drop="onDrop" />
+                    </dragDropConfig>
+                    <items>
+                        <StandardListItem title="{name}" class="whiteList listItemSpacing" type="Active"/>
+                    </items>
+                </List> -->
+        
+						</VBox>
+						 
+					</f:GridListItem>
+				</f:GridList>
+
+                <f:GridList id="Q2" headerText="" borderReached=".onBorderReached" items="" class="gridBox">
+	
+					<f:customLayout>
+						<cssgrid:GridBasicLayout gridAutoRows="5rem" gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>
+					</f:customLayout>
+					<f:GridListItem class="promotableBox">
+						<f:layoutData>
+							<cssgrid:GridItemLayoutData gridRow="span 2" gridColumn="span 2"/>
+						</f:layoutData>
+						<VBox class="sapUiTinyMargin">
+                        <core:Icon src="sap-icon://competitor" size=""  class="promoIcon" /> 
+							<Title text="PROMOTABLE" wrapping="true" />
+                          
+							  <!-- List PROMOTABLE -->
+                                  <!-- <Switch state="true" change="onSwitchToggle">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch> -->
+                <List id="list2" headerText="" width="100%" items="{/list2}" mode="SingleSelectMaster"
+				itemPress="onListItemPress"
+				inset="false" noDataText="Add">
+                    <dragDropConfig>
+                        <dnd:DragInfo sourceAggregation="items" />
+                        <dnd:DropInfo targetAggregation="items" drop="onDrop" />
+                    </dragDropConfig>
+                    <items>
+                        <StandardListItem title="{name}" class="whiteList listItemSpacing" type="Active"/>
+                    </items>
+                </List>
+                
+                     <!-- <Label text="" wrapping="true" class="Q"/>	 -->
+						</VBox>
+						 
+					</f:GridListItem>
+				</f:GridList>
+
+                <f:GridList id="Q1" headerText="" borderReached=".onBorderReached" items="" class="berlinGrid">
+					<f:customLayout>
+						<cssgrid:GridBasicLayout gridAutoRows="5rem" gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>
+					</f:customLayout>
+					<f:GridListItem>
+						<f:layoutData>
+							<cssgrid:GridItemLayoutData gridRow="span 2" gridColumn="span 2"/>
+						</f:layoutData>
+						<VBox class="sapUiSmallMargin">
+                        <core:Icon src="sap-icon://da" size=""  class="berlinIcon" /> 
+							<Title text="BERLIN CITY MEMBER"  />
+                            
+							 <!-- List BERLIN CITY MEMBER -->
+                              <!-- <Switch state="true" change="onSwitchToggle">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Switch> -->
+                 
+                
+                <List id="list3" headerText="" width="100%" items="{/list3}" mode="SingleSelectMaster"
+				itemPress="onListItemPress"
+				inset="false" noDataText="Add">
+                    <dragDropConfig>
+                        <dnd:DragInfo sourceAggregation="items" />
+                        <dnd:DropInfo targetAggregation="items" drop="onDrop" />
+                    </dragDropConfig>
+                    <items>
+                        <StandardListItem title="{name}" class="whiteList listItemSpacing" type="Active"/>
+                    </items>
+                </List>
+                 
+						</VBox>
+					</f:GridListItem>
+				</f:GridList>
+                         </HBox>
+                	<f:GridList id="gridList2" headerText="." borderReached=".onBorderReached" items="" class="moveRight gridList2Bg" >
+					  <f:customLayout>
+						<cssgrid:GridBasicLayout class="gridlist2" gridAutoRows="5rem" gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>
+					</f:customLayout>
+                    
+                    	<f:GridListItem>
+						<f:layoutData>
+							<cssgrid:GridItemLayoutData gridRow="span 2" gridColumn="span 5"/>
+						</f:layoutData>
+						<VBox class="sapUiTinyMargin">
+                        <core:Icon src="sap-icon://physical-activity" size=""  class="slpTiger" /> 
+							<Title text="SLEEPING TIGER" wrapping="true" />
+                          
+                            	  
+							  <!-- List 4 -->
+                              <HBox>
+                <List id="list4" headerText="" class="listWithGapRight" width="100%" items="{/list4}" mode="SingleSelectMaster"
+				itemPress="onListItemPress"
+				inset="false" noDataText="Add">
+                    <dragDropConfig>
+                        <dnd:DragInfo sourceAggregation="items" />
+                        <dnd:DropInfo targetAggregation="items" drop="onDrop" />
+                    </dragDropConfig>
+                    <items>
+                        <StandardListItem title="{name}"  class="whiteList listItemSpacing" type="Active" />
+                    </items>
+                </List>
+                
+                </HBox>
+               	
+						</VBox>
+					</f:GridListItem>
+                    
+				</f:GridList>
+            </VBox>
+            <HBox >
+            	<f:GridList id="gridList3" headerText="" borderReached=".onBorderReached" items="" class="unfitGrid" footerText="">
+					<f:customLayout>
+						<cssgrid:GridBasicLayout gridAutoRows="5rem" gridTemplateColumns="repeat(auto-fill, minmax(5rem, 1fr))" gridGap="0.5rem"></cssgrid:GridBasicLayout>
+					</f:customLayout>
+					<f:GridListItem class="unfit">
+						<f:layoutData>
+							<cssgrid:GridItemLayoutData gridRow="span 2" gridColumn="span 2" />
+						</f:layoutData>
+						<VBox class="sapUiTinyMargin">
+                             <core:Icon src="sap-icon://employee" size=""  class="berlinIcon" /> 
+							<Title text="UNFIT" wrapping="true" />
+                            	  
+                 
+							  <!-- List UNFIT -->
+                            
+                <List id="list5" headerText="" width="100%" items="{/list5}" mode="SingleSelectMaster"
+				itemPress="onListItemPress"
+				inset="false"  noDataText="Add">
+                    <dragDropConfig>
+                        <dnd:DragInfo sourceAggregation="items" />
+                        <dnd:DropInfo targetAggregation="items" drop="onDrop" />
+                    </dragDropConfig>
+                    <items>
+                        <StandardListItem title="{name}" class="whiteList listItemSpacing" type="Active"/>
+                        
+                    </items>
+
+                    
+                    
+                </List>
+                           
+                      
+						</VBox>
+					</f:GridListItem>
+				</f:GridList>
+            
+            </HBox>
+             </HBox>
+             <VBox>
+<!-- X Axis -->
+<html:div class="xAxisWrapper">
+    <html:div class="xArrow"></html:div>
+
+    <html:div class="xLabels">
+        <html:div class="xLabel low">Low</html:div>
+        <html:div class="xLabel moderate">Moderate</html:div>
+        <html:div class="xLabel high">High</html:div>
+    </html:div>
+
+    <html:div class="xAxisText">CAPACITY →</html:div>
+</html:div>
+          </VBox>
+        </content>
+               
+    </Page>
+
+</mvc:View>
