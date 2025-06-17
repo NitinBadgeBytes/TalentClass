@@ -114,6 +114,7 @@
 .sapUiSizeCompact .sapMSLITitleOnly {
   font-size: .875rem;
   background-color: white;
+  padding: 7px !important;
 }
 
 .sapUiSizeCompact .sapMSLI {
@@ -551,3 +552,4 @@
   font-size: var(--sapGroup_Title_FontSize);
   color: #1c1cff03;
 }
+

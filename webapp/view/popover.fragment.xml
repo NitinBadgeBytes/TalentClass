@@ -5,7 +5,7 @@
 		id="myPopover"
 		showHeader="false"
 		contentWidth="200px"
-		contentHeight="200px"
+		contentHeight="150px"
 		placement="Bottom"
 		ariaLabelledBy="master-title">
 		<NavContainer
@@ -17,27 +17,52 @@
 				<List
 					id="list"
 					items="" >
-					<StandardListItem
-						title="Open Talent Card" 
+					<!-- <StandardListItem
+						title="Open Talent Card" type="Active"
 						
 						 />
                          <StandardListItem
-						title="Edit Talent Review"
+						title="Edit Talent Review" type="Active"
 						
 						 />
                          <StandardListItem
-						title="Employee Profile"
+						title="Employee Profile" type="Active"
 					
 						 />
                          <StandardListItem
-						title="Developement"
+						title="Developement" type="Active"
 						
 						 />
                          <StandardListItem
-						title="Acheivement"
+						title="Acheivement" type="Active"
 						
-						 />
-
+						 /> -->
+     <items>
+      <CustomListItem>
+        
+          <Link text="Open Talent Card"  target="_blank" />
+      
+      </CustomListItem>
+      <CustomListItem>
+      
+          <Link text="Edit Talent Review"  target="_blank" />
+        
+      </CustomListItem>
+	   <CustomListItem>
+      
+          <Link text="Employee Profile"  target="_blank" />
+        
+      </CustomListItem>
+	   <CustomListItem>
+      
+          <Link text="Developement"  target="_blank" />
+        
+      </CustomListItem> <CustomListItem>
+      
+          <Link text="Acheivement"  target="_blank" />
+        
+      </CustomListItem>
+    </items>
 						
 						
 				</List>
