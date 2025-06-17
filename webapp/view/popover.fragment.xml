@@ -18,7 +18,7 @@
 					id="list"
 					items="" >
 					<StandardListItem
-						title="Open Talent Card"
+						title="Open Talent Card" 
 						
 						 />
                          <StandardListItem
@@ -37,6 +37,9 @@
 						title="Acheivement"
 						
 						 />
+
+						
+						
 				</List>
                 
 			</Page>
